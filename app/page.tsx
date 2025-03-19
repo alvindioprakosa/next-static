@@ -2,13 +2,13 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-    <div>
+    <main>
       <h1>Homepage</h1>
-      <p>This is the Home page</p>
+      <p>This is the Homepage</p>
       <p>
-        Visit in <Link href="/about">About</Link> page.
+        Visit the <Link href="/about">About</Link> page.
       </p>
-    </div>
+    </main>
   );
 };
 
