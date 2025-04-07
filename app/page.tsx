@@ -1,15 +1,18 @@
+// app/page.tsx
 import Link from "next/link";
 
-const Home = () => {
+export default function Home() {
   return (
-    <main>
-      <h1>Homepage</h1>
-      <p>This is the Homepage</p>
+    <main className="p-8">
+      <h1 className="text-2xl font-bold mb-4">Homepage</h1>
+      <p className="mb-2">This is the Homepage</p>
       <p>
-        Visit the <Link href="/about">About</Link> page.
+        Visit the{" "}
+        <Link href="/about" className="text-blue-600 hover:underline">
+          About
+        </Link>{" "}
+        page.
       </p>
     </main>
   );
-};
-
-export default Home;
+}
